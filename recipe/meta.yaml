@@ -39,7 +39,7 @@ test:
 
 about:
   home: https://cran.r-project.org/package=kinship2
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: 'Routines to handle family data with a pedigree object (2014, <doi: 10.1159/000363105>).
     The initial purpose was to create correlation structures that describe family relationships
     such as kinship and identity-by-descent, which can be used to model family data
@@ -48,7 +48,8 @@ about:
     Recent additions include utilities to trim the pedigree object with various criteria,
     and kinship for the X chromosome.'
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2'
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
   recipe-maintainers:
