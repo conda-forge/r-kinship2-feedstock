@@ -3,7 +3,7 @@ About r-kinship2
 
 Home: https://cran.r-project.org/package=kinship2
 
-Package license: GPL (>= 2)
+Package license: GPL-2.0-or-later
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-kinship2-feedstock/blob/master/LICENSE.txt)
 
