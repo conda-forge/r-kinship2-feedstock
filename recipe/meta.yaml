@@ -1,4 +1,4 @@
-{% set version = "1.8.5" %}
+{% set version = "1.9.6" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/kinship2_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/kinship2/kinship2_{{ version }}.tar.gz
-  sha256: 72c226b6ccad9efcc70c86050a980fef2e8bb8040bbfe02cb105075a005a16d6
+  sha256: 0150bd5974c2a19885f6ff2e99f3c1f6361054a0910dcfc9dd26a8e0cd73bbf6
 
 build:
-  merge_build_host: True  # [win]
-  number: 2
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -40,13 +40,8 @@ test:
 about:
   home: https://cran.r-project.org/package=kinship2
   license: GPL-2.0-or-later
-  summary: 'Routines to handle family data with a pedigree object (2014, <doi: 10.1159/000363105>).
-    The initial purpose was to create correlation structures that describe family relationships
-    such as kinship and identity-by-descent, which can be used to model family data
-    in mixed effects models, such as in the coxme function. Also includes a tool for
-    pedigree drawing which is focused on producing compact layouts without intervention.
-    Recent additions include utilities to trim the pedigree object with various criteria,
-    and kinship for the X chromosome.'
+  summary: 'Routines to handle family data with a pedigree object (2014, <doi: 10.1159/000363105>). The initial purpose was to create correlation structures that describe family relationships such as kinship and identity-by-descent, which can be used to model family data in mixed effects models, such as in the coxme function.
+    Also includes a tool for pedigree drawing which is focused on producing compact layouts without intervention. Recent additions include utilities to trim the pedigree object with various criteria, and kinship for the X chromosome.'
   license_family: GPL3
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
