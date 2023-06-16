@@ -1,11 +1,11 @@
-About r-kinship2
-================
+About r-kinship2-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-kinship2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://cran.r-project.org/package=kinship2
 
 Package license: GPL-2.0-or-later
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-kinship2-feedstock/blob/main/LICENSE.txt)
 
 Summary: Routines to handle family data with a pedigree object (2014, <doi: 10.1159/000363105>). The initial purpose was to create correlation structures that describe family relationships such as kinship and identity-by-descent, which can be used to model family data in mixed effects models, such as in the coxme function. Also includes a tool for pedigree drawing which is focused on producing compact layouts without intervention. Recent additions include utilities to trim the pedigree object with various criteria, and kinship for the X chromosome.
 
